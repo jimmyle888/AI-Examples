@@ -1,0 +1,29 @@
+TensorFlow 2.0 Upgrade Script
+-----------------------------
+Converted 1 files
+Detected 0 issues that require attention
+--------------------------------------------------------------------------------
+================================================================================
+Detailed log follows:
+
+================================================================================
+--------------------------------------------------------------------------------
+Processing file '1-MNIST-Basic-save.ipynb'
+ outputting to '2.0-1-MNIST-Basic-save.ipynb'
+--------------------------------------------------------------------------------
+
+14:9: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+16:16: INFO: Changing labels arg of tf.nn.softmax_cross_entropy_with_logits to tf.stop_gradient(labels). Please check this transformation.
+
+17:16: INFO: Added keywords to args of function 'tf.reduce_mean'
+18:12: INFO: Renamed 'tf.train.GradientDescentOptimizer' to 'tf.compat.v1.train.GradientDescentOptimizer'
+20:7: INFO: Renamed 'tf.global_variables_initializer' to 'tf.compat.v1.global_variables_initializer'
+21:5: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+34:19: INFO: Added keywords to args of function 'tf.argmax'
+34:34: INFO: Added keywords to args of function 'tf.argmax'
+36:6: INFO: Added keywords to args of function 'tf.reduce_mean'
+46:6: INFO: Added keywords to args of function 'tf.argmax'
+50:6: INFO: Added keywords to args of function 'tf.argmax'
+53:8: INFO: Renamed 'tf.train.Saver' to 'tf.compat.v1.train.Saver'
+--------------------------------------------------------------------------------
+
